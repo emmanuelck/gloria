@@ -1,0 +1,221 @@
+body{
+    font-family: 'Jost', sans-serif;
+    border-top: 10px solid #5de200;
+}
+.header-nav{
+    background: url(images/logo-gloria.svg) no-repeat right top;
+    background-size: 300px;
+    height: 51px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+@media (min-width: 992px){
+    .header-nav{
+        background-size: 500px;
+        height: 93px;
+        margin-top: 40px;
+    }
+    .navbar-nav{
+        width: 50%;
+    }
+}
+@media (min-width: 1200px){
+    .header-nav{
+        background-size: auto;
+        height: 130px;
+        margin-top: 70px;
+    }
+}
+.nav-link{
+    font-size: 32px;
+}
+
+/*HIGHLIGHT TEXT*/
+.highlight-text span{
+    color: #5de200;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 5px 20px;
+    display: inline-block;
+}
+
+/*PROJECTS*/
+.list-project{
+    margin-top: -100px
+}
+.project-link img{
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*CLIENTES NAV*/
+.clients-nav{
+    margin-top: 100px;
+}
+.clients-nav a{
+    font-size: 34px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2d2d2d;
+}
+@media (min-width: 992px){
+    .clients-nav a{
+        font-size: 64px;
+    }
+}
+.clients-nav a:hover{
+    color: #5de200;
+}
+.clients-nav a:after{
+    content: "/";
+    margin-left: 10px;
+}
+.clients-nav a:hover:after{
+    color: #2d2d2d;
+}
+
+/* ABOUTUS */
+.aboutus{
+    margin: 200px 0;
+}
+.aboutus h3{
+    font-size: 35px;
+    font-weight: 400;
+    color: #5de200;
+    padding-left: 60px;
+}
+.aboutus h3 span{
+    display: block;
+    margin-left: -60px;
+}
+.aboutus p{
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 500;
+}
+@media (min-width: 992px){
+    .aboutus h3{
+        font-size: 64px;
+        line-height: 62px;
+    }
+    .aboutus p{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+
+/*TEAM*/
+.team{
+    margin: 200px 0;
+}
+.team-member img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+@media (min-width: 992px){
+    .team-member img{
+        width: 250px;
+        height: 250px;
+    }
+}
+.team-member h2{
+    width: 50px;
+    color: #5de200;
+    font-weight: 400;
+    word-break: normal;
+}
+
+/*Proyect*/
+.project{
+    margin-top: 150px;
+}
+.project h2{
+    color: #5de200;
+}
+.project-content{
+    margin-top: -100px;
+    padding-top: 200px;
+    background-color: #ededed;
+}
+.project-content-description{
+    background: #fff;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.page footer{
+    background: #ededed;
+}
+footer form .form-label{
+    padding-left: 20px;
+}
+footer form input.form-control,
+input.form-control:focus{
+    border-radius: 0;
+    border-top: none;
+    background: transparent;
+    border-width: 1px;
+    border-color: #2d2d2d;
+    box-shadow: none;
+}
+footer form textarea.form-control,
+textarea.form-control:focus{
+    border-radius: 0;
+    background: transparent;
+    border-width: 1px;
+    border-color: #2d2d2d;
+    color: #2d2d2d;
+    box-shadow: none;
+    height: 150px !important;
+}
+@media (min-width: 768px){
+    footer form textarea.form-control{
+        height: 240px !important;
+    }
+}
+::placeholder{
+    color: #2d2d2d;
+}
+footer .btn-primary,
+footer .btn-primary:focus{
+    background: #5de200;
+    border: none;
+    border-radius: 0;
+    color: #2d2d2d;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 100px;
+    margin-top: 20px;
+}
+
+footer{
+    border-bottom: 20px solid #5de200;
+    margin-top: 150px;
+}
+footer .footer-nav a{
+    color: #2d2d2d;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+footer .footer-nav a:last-child{
+    margin-left: 25px;
+}
+
+.project-content + footer{
+    margin-top: 0;
+    padding-top: 100px;
+}
