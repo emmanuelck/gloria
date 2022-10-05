@@ -27,27 +27,118 @@ body{
     }
 }
 .nav-link{
-    font-size: 32px;
+    font-size: 22px;
+    color: #2d2d2d;
 }
-
+@media (min-width: 992px){
+    .nav-link{
+        padding: 0 35px!important;
+    }
+}
+@media (min-width: 1440px){
+    .nav-link{
+        padding: 0 50px!important;
+    }
+}
 /*HIGHLIGHT TEXT*/
+.highlight-text{
+    width: 320px;
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 10;
+}
+@media (min-width: 576px){
+    .highlight-text{
+        width: 500px;
+    }
+}
+@media (min-width: 768px){
+    .highlight-text{
+        width: 660px;
+    }
+}
+@media (min-width: 992px){
+    .highlight-text{
+        margin: 0;
+    }
+}
+@media (min-width: 1200px){
+    .highlight-text{
+        left: 110px;
+    }
+}
 .highlight-text span{
     color: #5de200;
-    font-size: 45px;
+    font-size: 35px;
+    line-height: 50px;
     font-weight: 400;
-    margin: 5px 20px;
+    margin: 0px 20px;
     display: inline-block;
+    position: relative;
+}
+@media (min-width: 576px){
+    .highlight-text span{
+        font-size: 45px;
+        line-height: 60px;
+    }
+}
+@media (min-width: 768px){
+    .highlight-text span{
+        font-size: 55px;
+        line-height: 80px;
+    }
+}
+.highlight-text .line-1 span{left: 0px;}
+.highlight-text .line-2 span{left: 100px;}
+.highlight-text .line-3 span{left: 50px;}
+.highlight-text .line-4 span{left: 0px;}
+.highlight-text .line-5 span{left: 40px;}
+.highlight-text .line-6 span{left: 0px;}
+.highlight-text .line-6 span span{left: 10px;}
+
+@media (min-width: 576px){
+    .highlight-text .line-1 span{left: 20px;}
+    .highlight-text .line-2 span{left: 150px;}
+    .highlight-text .line-3 span{left: 100px;}
+    .highlight-text .line-4 span{left: 30px;}
+    .highlight-text .line-5 span{left: 0px;}
+    .highlight-text .line-6 span{left: 50px;}
+    .highlight-text .line-6 span span{left: 0px;}
+}
+@media (min-width: 768px){
+    .highlight-text .line-1 span{left: 40px;}
+    .highlight-text .line-2 span{left: 230px;}
+    .highlight-text .line-3 span{left: 150px;}
+    .highlight-text .line-4 span{left: 60px;}
+    .highlight-text .line-5 span{left: 0px;}
+    .highlight-text .line-6 span{left: 80px;}
 }
 
 /*PROJECTS*/
-.list-project{
-    margin-top: -100px
+.list-project .row{
+    width: 100%;
+    max-width: 745px;
 }
+@media (min-width: 992px){
+    .list-project{
+        margin-top: -100px;
+        position: relative;
+    }
+}
+/* @media (min-width: 1200px){
+    .list-project{
+        left: 43px;
+    }
+} */
 .project-link img{
     border-radius: 50%;
     overflow: hidden;
     display: block;
     margin-bottom: 20px;
+}
+
+.gloria-home{
+    max-width: 1200px;
 }
 
 /*CLIENTES NAV*/
@@ -62,7 +153,7 @@ body{
 }
 @media (min-width: 992px){
     .clients-nav a{
-        font-size: 64px;
+        font-size: 54px;
     }
 }
 .clients-nav a:hover{
@@ -78,7 +169,12 @@ body{
 
 /* ABOUTUS */
 .aboutus{
-    margin: 200px 0;
+    margin: 100px auto;
+}
+@media (min-width: 992px){
+    .aboutus{
+        margin: 200px auto;
+    }
 }
 .aboutus h3{
     font-size: 35px;
@@ -86,6 +182,7 @@ body{
     color: #5de200;
     padding-left: 60px;
 }
+
 .aboutus h3 span{
     display: block;
     margin-left: -60px;
@@ -95,21 +192,40 @@ body{
     line-height: 34px;
     font-weight: 500;
 }
+@media (min-width: 768px){
+    .aboutus h3{
+        font-size: 45px;
+        line-height: 52px;
+        position: relative;
+        top: -20px;
+    }
+}
 @media (min-width: 992px){
     .aboutus h3{
         font-size: 64px;
         line-height: 62px;
+        top: 0px;
     }
     .aboutus p{
         font-size: 24px;
         line-height: 36px;
     }
 }
+@media (min-width: 992px){
+    .aboutus h3{
+        left: 50px;
+    }
+}
+@media (min-width: 1440px){
+    .aboutus h3{
+        left: 150px;
+    }
+}
 
 
 /*TEAM*/
 .team{
-    margin: 200px 0;
+    margin: 150px 0;
 }
 .team-member img{
     border-radius: 50%;
@@ -128,6 +244,11 @@ body{
     font-weight: 400;
     word-break: normal;
 }
+.team-member strong{
+    font-size: 18px;
+    line-height: 18px;
+    width: 60%;
+}
 
 /*Proyect*/
 .project{
@@ -143,7 +264,7 @@ body{
 }
 .project-content-description{
     background: #fff;
-    padding: 40px;
+    padding: 5px;
 }
 
 
